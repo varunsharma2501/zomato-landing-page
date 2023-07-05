@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero_section {
+    background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+    height: 60px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar .get_app {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.navbar .menu_container {
+    display: flex;
+    font-weight: 200;
+    font-size: 18px;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+}
+
+.hero_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px;
+}
+
+#zomato_logo_image {
+    height: 90px;
+    width: 250px;
+}
+
+.hero_container h1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero_container_input {
+    background: white;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.location_input,
+.search_restaurant {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.location_input {
+    width: 35%;
+}
+
+.search_restaurant {
+    width: 65%;
+    border-left: 2px solid #e0e0e0;
+}
+
+.navbar .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    .navbar .icon {
+        display: flex;
+    }
+
+    .navbar .link {
+        display: none;
+    }
+
+    .navbar {
+        padding: 16px;
+    }
+
+    .hero_section {
+        height: 85vh;
+    }
+
+    .hero_container_input {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .location_input,
+    .search_restaurant {
+        width: 80%;
+        border-radius: 5px;
+        padding: 15px;
+    }
+}

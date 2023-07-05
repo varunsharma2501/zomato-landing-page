@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<section class="hero_section">
+    <header>
+        <nav class="navbar">
+            <div class="get_app">
+                <a href="#"><i class="fa-solid fa-bell"></i></a>  
+                <a href="#">Get the app</a>
+            </div>
+            <div class="menu_container">
+                <a href="#" class="link">Investor Relations</a>
+                <a href="#" class="link">Add restaurant</a>
+                <a href="#" class="link">Log in</a>
+                <a href="#" class="link">Sign up</a>
+                <a href="#" class="icon"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero_container">
+        <img src="./images/logo.png" alt="zomata logo" id="zomato_logo_image">
+        <h1 class="hero_container_heading">Discover the best food & drinks in Agra </h1>
+        <div class="hero_container_input">
+            <input type="text" placeholder="Agra" class="location_input">
+            <input  style="	font-family: 'Courier New', Courier, monospace " type="text" class="search_restaurant" placeholder= " &#xf002; Search for restaurant,cousine or a dish">
+            <!-- to add icon in placeholder we use unicode of icon from font awesome and then write &#x before it   &#x(unicode); -->
+        </div>
+    </div>
     
+</section>
 </body>
+
 </html>

@@ -4,12 +4,12 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
+/* <!--   ***************************HERO SECTION ************************************************* --> */
 .hero_section {
     background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
     background-size: cover;
     background-position: center;
-    min-height: 70vh;
+    min-height: 65vh;
     color: white;
 }
 
@@ -88,6 +88,7 @@
     border-left: 2px solid #e0e0e0;
 }
 
+/* this part is for the user icon which will be visible when the screen is shrinked to mobile size */
 .navbar .icon {
     display: flex;
     justify-content: center;
@@ -99,11 +100,13 @@
     display: none;
 }
 
+/* changes when screen becomes small */
 @media only screen and (max-width:600px) {
     .navbar .icon {
         display: flex;
     }
 
+    /* all the links in navbar disappear due to lack of space */
     .navbar .link {
         display: none;
     }
@@ -116,6 +119,7 @@
         height: 85vh;
     }
 
+    /* the format of input container changes they become vertically aligned */
     .hero_container_input {
         flex-direction: column;
         background-color: transparent;
@@ -128,4 +132,149 @@
         border-radius: 5px;
         padding: 15px;
     }
+}
+
+/* **************************************container_we_offer****************************** */
+.container_we_offer{
+    width: 80%;
+    display: flex;
+    margin: 48px auto;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.container_we_offer .card{
+border-radius:8px ;
+border: 2px solid #e0e0e0;
+overflow: hidden;
+/* the image is going out of border so to keep that part hidden we use it */
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.container_we_offer .card:hover{
+transform: scale(1.05);
+}
+.container_we_offer .card img{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    /* used so that image does not smudge */
+    object-position: center;
+}
+
+.container_we_offer .card h1{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0px 0px 0px 15px;
+}
+
+.container_we_offer .card p{
+    font-size: 15px;
+    padding: 0px 0px 15px 15px;
+    font-weight: 200;
+}
+
+/*  ******************************* collection_container  ********** */
+
+.collection_container{
+    width: 90%;
+    margin: 48px auto;
+    flex-wrap: wrap;
+}
+
+.collection_container h1{
+    font-weight: 600;
+    margin: 0 80px;
+}
+
+.collection_container .subheadings{
+    width: 87%;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    gap: 1 rem;
+    /* margin-left: 30px; */
+    margin: 0 80px;
+}
+
+.collection_container .subheadings span:nth-child(2){
+    font-size: 13px;
+    color: darkorange;
+}
+
+.collections_card{
+   /* width: 80%; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center; 
+    align-items: center;
+   margin-top: 24px;
+   gap: 8px;
+   position: relative;
+   flex-direction: row;
+   /* display: inline; */
+} 
+
+.collection_container .card{
+    
+    height: 300px;
+    width: 240px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    /* display: inline; */
+}
+
+.card1{
+    background: url("./images/taj.jpg");  
+     /* height: 300px;
+    width: 200px; 
+    object-fit: cover;  */
+    
+}
+.card2{
+    background: url("./images/dining.jpg"); 
+    /* height: 300px;
+    width: 200px;    */
+}
+.card3{
+    background: url("./images/mughlai.jpg");   
+    /* height: 300px;
+    width: 200px;  */
+}
+ .card4{
+    background: url("./images/breakfast.jpg");   
+    /* height: 300px;
+    width: 200px;  */
+}
+
+.overlay{
+    display: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.9) 0%,
+         rgba(0,0,0,0.05) 50%,
+         rgba(0,0,0,0.05) 85%
+    );
+}
+
+.collections_card .content{
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding: 12px 16px;
+    color: white;
 }

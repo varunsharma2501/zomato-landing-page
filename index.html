@@ -7,13 +7,9 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
@@ -40,8 +36,7 @@
             <h1 class="hero_container_heading">Discover the best food & drinks in Agra </h1>
             <div class="hero_container_input">
                 <input type="text" placeholder="Agra" class="location_input">
-                <input style="	font-family: 'Courier New', Courier, monospace " type="text" class="search_restaurant"
-                    placeholder=" &#xf002; Search for restaurant,cousine or a dish">
+                <input style="	font-family: 'Courier New', Courier, monospace " type="text" class="search_restaurant"    placeholder=" &#xf3eb; Search for restaurant,cousine or a dish" style="font-family: FontAwesome, Arial; font-style: normal">
                 <!-- to add icon in placeholder we use unicode of icon from font awesome and then write &#x before it   &#x(unicode); -->
             </div>
         </div>
@@ -115,6 +110,85 @@
         </div>
     </section>
 
+    <!--    ****************** popularPlace ************************* -->
+    <section class="popularPlace">
+        <h1>Popular Localities in and around Agra</h1>
+        <div class="places_container">
+
+            <div class="container">
+                <button>
+                    <div class="text">
+                        <h2>Tajganj</h2>
+                        <p>422 places</p>
+                    </div>
+                    <i class="fa-regular fa-angle-right"></i>
+                </button>
+                <button>
+                    <div class="text">
+                        <h2>Kamla Nagar</h2>
+                        <p>106 places</p>
+                    </div>
+                    <i class="fa-regular fa-angle-right"></i>
+                </button>
+                <button>
+                    <div class="text">
+                        <h2>Sikandra</h2>
+                        <p>195 places</p>
+                    </div>
+                    <i class="fa-regular fa-angle-right"></i>
+                </button>
+            </div>
+
+            <div class="container">
+                <button>
+                    <div class="text">
+                        <h2>Civil Lines</h2>
+                        <p>224 places</p>
+                    </div>
+                    <i class="fa-regular fa-angle-right"></i>
+                </button>
+                <button>
+                    <div class="text">
+                        <h2>Mantola</h2>
+                        <p>53 places</p>
+                    </div>
+                    <i class="fa-regular fa-angle-right"></i>
+                </button>
+                <button>
+                    <div class="text">
+                        <h2>Rakabgabj</h2>
+                        <p>65 places</p>
+                    </div>
+                    <i class="fa-regular fa-angle-right"></i>
+                </button>
+            </div>
+
+            <div class="container">
+                <button>
+                    <div class="text">
+                        <h2>Agra Cantt</h2>
+                        <p>102 places</p>
+                    </div>
+                    <i class="fa-regular fa-angle-right"></i>
+                </button>
+                <button>
+                    <div class="text">
+                        <h2>Kandari</h2>
+                        <p>99 places</p>
+                    </div>
+                    <i class="fa-regular fa-angle-right"></i>
+                </button>
+                <button class="see_more">
+                    <div class="text">
+                        <p>see more</p>
+                    </div>
+                    <i class="fa-regular fa-angle-down"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
     <!--     *******************   get_the_app    ************************* -->
     <section class="get_the_app">
         <div class="subcontainer">
@@ -139,15 +213,101 @@
                     <input type="text" class="text_input" placeholder="Email">
                     <button class="button" type="button">Share App Link</button>
                 </div>
-                <p class="download">Download app from</p>
-
+                
                 <div class="label_container">
+                    <p class="download">Download app from</p>
                     <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
                     <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
                 </div>
             </div>
         </div>
     </section>
+
+    <!--  **********************  explore_container  ***********************   -->
+<section class="explore_container">
+<h1>Explore options near me</h1>
+<div class="buttons_container">
+    <button>
+        <p>Popular cuisines near me</p>
+        <i class="fa-regular fa-angle-down"></i>
+    </button>
+    <button>
+        <p>Popular restaurant types near me</p>
+        <i class="fa-regular fa-angle-down"></i>
+    </button>
+    <button>
+        <p>Cities we deliver to</p>
+        <i class="fa-regular fa-angle-down"></i>
+    </button>
+</div>
+</section>    
+    <!--  *****************  footer_section  ************************ -->
+    <footer class="footer_section">
+        <section class="section1">
+            <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"
+                alt="">
+            <div class="section1_buttons">
+                <button>
+                    <img src="./images/IndianFlag_generated.jpg" alt="" style="width:30px">
+                    India
+                </button>
+                <button>
+                    <i class="fa-solid fa-globe"></i>
+                    English
+                </button>
+            </div>
+        </section>
+
+        <section class="navigation_bar">
+            <div class="link_container">
+                <h5>ABOUT ZOMATO</h5>
+                <a href="#" class="footer_link">Who We Are</a>
+                <a href="#" class="footer_link">Blog</a>
+                <a href="#" class="footer_link">Work With Us</a>
+                <a href="#" class="footer_link">Investor Relations</a>
+                <a href="#" class="footer_link">Report Fraud</a>
+                <a href="#" class="footer_link">Contact Us</a>
+            </div>
+            <div class="link_container">
+                <h5>ZOMAVERSE</h5>
+                <a href="#" class="footer_link">Zomato</a>
+                <a href="#" class="footer_link">Blinkit</a>
+                <a href="#" class="footer_link">Feeding India</a>
+                <a href="#" class="footer_link">Hyperpure</a>
+                <a href="#" class="footer_link">Zomaland</a>
+            </div>
+            <div class="link_container">
+                <H5>FOR RESTAURANTS</H5>
+                <a href="#" class="footer_link">Partner With Us</a>
+                <a href="#" class="footer_link">Apps For You</a>
+                <br>
+                <h5>FOR ENTERPRISES</h5>
+                <a href="#" class="footer_link">Zomato For Enterprises</a>
+            </div>
+
+            <div class="link_container">
+                <h5>LEARN MORE</h5>
+                <a href="#" class="footer_link">Privacy</a>
+                <a href="#" class="footer_link">Security</a>
+                <a href="#" class="footer_link">Terms</a>
+                <a href="#" class="footer_link">Sitemap</a>
+            </div>
+            <div class="link_container">
+                <h5>SOCIAL LINKS</h5>
+                <div class="social_logos">
+                    <button><i class="fa-brands fa-linkedin-in"></i></button>
+                    <button><i class="fa-brands fa-instagram"></i></button>
+                    <button><i class="fa-brands fa-twitter"></i></button>
+                    <button><i class="fa-brands fa-youtube"></i></button>
+                    <button><i class="fa-brands fa-facebook-f"></i></button>
+                </div>
+                <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt=""
+                    class="logos">
+                <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt=""
+                    class="logos">
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
